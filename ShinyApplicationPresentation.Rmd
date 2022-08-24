@@ -1,0 +1,53 @@
+---
+title: "Reproducible Pitch for Shiny Application"
+author: "Swastik"
+date: "08/24/2022"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Application Overview
+
+- This application has been developed to find the best car to use for a trip.
+
+- Application available @ https://swastikp3.shinyapps.io/dataproducts/ 
+
+- Shiny UI.R , Server.R and other files are available @ https://github.com/swastikp3/dataproducts 
+
+- Shiny App presentation @ https://rpubs.com/swastikp3/shinyapppresentationlatest  
+
+## Data Used
+
+- We used the mtcars data set for this application to get the cars details
+
+```{r, message=FALSE}
+summary(mtcars)
+```
+
+## Some Plots
+
+Plotting the data available on the mtcars dataset
+
+```{r, message=FALSE}
+plot(mtcars)
+```
+
+## Application Functionality
+
+- User can provide following information as INPUT
+- Distance to travel
+- Gasoline Price
+- Maximum Gasoline Expenditure
+- Car attributes like Number of Cylinder, Transmission, Horse Power etc
+
+- Based on the above selection , the following OUTPUT is shown
+- It provides the selected cars  
+- Filter capability on column headers 
+- Pagination based on number of results per page
+
+Thank you
+
+
